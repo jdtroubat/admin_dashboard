@@ -5,12 +5,18 @@ svg {
     fill: white;
 }
 
+.logo-text svg{
+    width: 3rem;
+}
+
 .navbar svg{
     fill: black;
     margin-right: 1rem;
     margin-left: 3rem;
 }
-
+.project svg{
+    fill: black;
+}
 
 *{
     margin: 0;
@@ -18,6 +24,7 @@ svg {
 }
 body{
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 .grid{
@@ -73,7 +80,6 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-
 }
 .navbar img{
     height: 3rem;
@@ -86,11 +92,6 @@ body{
     background-color: orange;
     border-radius: 50%;
     margin-right: 1rem;
-
-}
-
-.content{
-    background-color: #d4d4d4;
 }
 
 .navbar{
@@ -138,4 +139,144 @@ body{
     height: 1.5rem;
 }
 
+.content{
+    background-color: #d4d4d4;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 
+.project h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.ann h3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    align-items: flex-start;
+    border-left: 5px solid #facc15;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.card p{
+    color: #737373;
+    margin-top: 0.5rem;
+}
+
+.ann-trend{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.ann-card{
+    height:80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ann-text{
+    padding: 1rem;
+}
+.ann-text h6{
+    font-size: 16px
+}
+.ann-text p{
+    color: #737373;
+    font-size: 12px;
+
+}
+.divider{
+    border: 0.5px solid #737373;
+    width: 75%;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.trend h3{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.trend-card{
+    display: flex;
+    flex-direction: column;
+    height:60%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 3rem;
+    padding-top: 0.3rem;
+}
+
+.trend-image-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.trend-image-text img{
+    width: 2.1rem;
+    margin-right: 1rem;
+}
+
+.trend-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-text p{
+    font-size: 12px;
+}
+
+img[src="images/1.svg"] {
+    background-color: violet;
+    border-radius: 50%;
+}
+
+img[src="images/2.svg"] {
+    background-color: green;
+    border-radius: 50%;
+}
+img[src="images/3.svg"] {
+    background-color: red;
+    border-radius: 50%;
+}
+img[src="images/4.svg"] {
+    background-color: lightblue;
+    border-radius: 50%;
+}
